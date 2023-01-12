@@ -21,10 +21,10 @@ let package = Package(
         .target(
             name: "projections-ios",
             dependencies: [],
-            path:"Sources"),
+            path:"proj-ios"),
         .testTarget(
             name: "projections-iosTests",
             dependencies: ["projections-ios"],
-            path:"Tests"),
+            path:"proj-iosTests"),
     ]
 )
