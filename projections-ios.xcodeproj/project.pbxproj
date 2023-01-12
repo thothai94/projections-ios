@@ -21,8 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_33 /* projections_ios.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* projections_ios.swift */; };
-		OBJ_51 /* projections_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* projections_iosTests.swift */; };
 		OBJ_53 /* projections_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "projections-ios::projections-ios::Product" /* projections_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		OBJ_12 /* projections_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projections_iosTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
 		OBJ_17 /* proj-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "proj-ios"; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
@@ -58,9 +55,8 @@
 		OBJ_26 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		OBJ_27 /* proj-ios.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "proj-ios.podspec"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* projections_ios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projections_ios.swift; sourceTree = "<group>"; };
 		"projections-ios::projections-ios::Product" /* projections_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = projections_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"projections-ios::projections-iosTests::Product" /* projections_iosTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = projections_iosTests.xctest; path = "projections-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		"projections-ios::projections-iosTests::Product" /* projections-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "projections-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,38 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* projections-iosTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_11 /* projections-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* projections_iosTests.swift */,
-			);
-			name = "projections-iosTests";
-			path = "Tests/projections-iosTests";
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"projections-ios::projections-ios::Product" /* projections_ios.framework */,
-				"projections-ios::projections-iosTests::Product" /* projections_iosTests.xctest */,
+				"projections-ios::projections-iosTests::Product" /* projections-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
 				OBJ_13 /* Products */,
 				OBJ_16 /* docs */,
 				OBJ_17 /* proj-ios */,
@@ -128,25 +105,7 @@
 				OBJ_26 /* Podfile */,
 				OBJ_27 /* proj-ios.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* projections-ios */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* projections-ios */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* projections_ios.swift */,
-			);
-			name = "projections-ios";
-			path = "Sources/projections-ios";
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -195,7 +154,7 @@
 			);
 			name = "projections-iosTests";
 			productName = projections_iosTests;
-			productReference = "projections-ios::projections-iosTests::Product" /* projections_iosTests.xctest */;
+			productReference = "projections-ios::projections-iosTests::Product" /* projections-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +173,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_33 /* projections_ios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_51 /* projections_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
